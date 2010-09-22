@@ -1,0 +1,20 @@
+REMEMBER TO PICK UP PHONE ON MON LECTURE
+
+
+Problems
+Lose connectivity = auto lose or time out/ lose points
+
+Server stuff:
+Comet
+
+Remember to do testing
+
+
+Iteration 1 
+–	needs to be runnable  
+–	turn in test suite too
+
+
+
+
+email Raluca w/ questions

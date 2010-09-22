@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/selectedPlayer"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView  
+        android:id="@+id/selectedPlayerInfo"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:gravity="center_horizontal" 
+	    android:padding="12dip"
+    />
+    <ImageView   
+	  android:id="@+id/selectedPlayerImage"
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:gravity="center_horizontal"
+	  android:layout_weight="1"
+	 />
+    <TextView  
+	    android:id="@+id/selectedPlayerDescription"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:gravity="center_horizontal" 
+	    android:padding="12dip"
+    />
+    <LinearLayout
+    	android:id="@+id/selectedPlayerBottomButtons"
+    	android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_horizontal" 
+    	>
+		<ImageButton
+	    	android:id="@+id/selectedPlayerFightButton"
+	    	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	    	android:text=" Fight "
+	        android:src="@drawable/sangeyasha48"
+			android:scaleType="center"
+			android:layout_weight="1"
+	    	android:onClick="clickSelectedPlayerFightButton" />   		    	    
+	    <ImageButton
+	    	android:id="@+id/selectedPlayerBackButton"
+	    	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	    	android:text=" Back "
+	        android:src="@drawable/ghost48"
+			android:scaleType="center"
+			android:layout_weight="1"
+	    	android:onClick="clickSelectedPlayerBackButton" />  	
+    </LinearLayout>
+</LinearLayout>

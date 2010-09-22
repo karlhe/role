@@ -1,0 +1,6 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+slapper:
+  name: Slapper
+  description: A civilized warrior who never resorts to brutal blows.
+  health: 100

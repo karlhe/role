@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <TableLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:stretchColumns="0|1"
+    	android:layout_gravity="center_vertical|center_horizontal">
+    	
+    	<TableRow>
+			<TextView 
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 
+			    android:gravity="right"
+			    android:text="XTest : "/>
+			<TextView 
+				android:id="@+id/xtest"
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 
+			    android:text="LOL"/>
+    	</TableRow>
+    	
+    	<TableRow>
+			<TextView 
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 
+			    android:gravity="right"
+			    android:text="YTest : "/>
+			<TextView 
+				android:id="@+id/ytest"
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 
+			    android:text="LOL"/>
+    	</TableRow>
+    	
+    	<TableRow>
+			<TextView 
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 
+			    android:gravity="right"
+			    android:text="ZTest : "/>
+			<TextView 
+				android:id="@+id/ztest"
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 
+			    android:text="LOL"/>
+    	</TableRow>
+    	
+    	    	<TableRow>
+			<TextView 
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 
+			    android:gravity="right"
+			    android:text="XTest2 : "/>
+			<TextView 
+				android:id="@+id/xtest2"
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 
+			    android:text="LOL"/>
+    	</TableRow>
+    	
+    	<TableRow>
+			<TextView 
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 
+			    android:gravity="right"
+			    android:text="YTest2 : "/>
+			<TextView 
+				android:id="@+id/ytest2"
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 
+			    android:text="LOL"/>
+    	</TableRow>
+    	
+    	<TableRow>
+			<TextView 
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 
+			    android:gravity="right"
+			    android:text="ZTest2 : "/>
+			<TextView 
+				android:id="@+id/ztest2"
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 
+			    android:text="LOL"/>
+    	</TableRow>
+    	
+    	
+    	
+    	
+    	<TableRow>
+			<TextView 
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 
+			    android:gravity="right"
+			    android:text="X : "/>
+			<TextView 
+				android:id="@+id/x"
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 
+			    android:text="not supported"/>
+    	</TableRow>
+    
+    	<TableRow>
+			<TextView 
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 
+			    android:gravity="right"
+			    android:text="Y : "/>
+			<TextView 
+				android:id="@+id/y"
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 
+			    android:text="not supported"/>
+    	</TableRow>
+    
+    	<TableRow>
+			<TextView 
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 
+			    android:gravity="right"
+			    android:text="Z : "/>
+			<TextView 
+				android:id="@+id/z"
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 
+			    android:text="not supported"/>
+    	</TableRow>
+    	<TableRow>
+			<Button
+		    	android:id="@+id/action"
+		    	android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		    	android:text="       Action        "/>
+		    <Button
+		    	android:id="@+id/test"
+		    	android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		    	android:text="       Test        "/> 		
+    	</TableRow>
+    </TableLayout>
+    
+</merge>

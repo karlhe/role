@@ -1,0 +1,9 @@
+Instance ID:    i-1bd86d70
+Volume ID:      vol-9fc262f6
+IP Address:     10.244.130.241
+Public DNS:		ec2-184-73-2-94.compute-1.amazonaws.com
+Root PW:		somethingstupid
+
+Commands to know (run from ~/role)
+thin start -p 80 -e production -d
+thin stop

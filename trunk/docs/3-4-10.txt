@@ -1,0 +1,7 @@
+make sure protocol isn't too heavyweight for wi-fi
+
+test cases
+
+get stuff working!!!
+
+Saung

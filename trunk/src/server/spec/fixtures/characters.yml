@@ -1,0 +1,55 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+karl:
+  name: Karl
+  character_class: slapper
+  health: 100
+  experience: 99
+  level: 1
+  battle: karl_saung
+  fetched_at: <%= Time.at(0) %>
+  password_salt: <%= salt = Authlogic::Random.hex_token %>
+  crypted_password: <%= Authlogic::CryptoProviders::Sha512.encrypt("password" + salt) %>
+  persistence_token: <%= Authlogic::Random.hex_token %>
+  latitude: 100.0000
+  longitude: -100.0000
+
+saung:
+  name: Saung
+  character_class: slapper
+  health: 100
+  experience: 0
+  level: 1
+  battle: karl_saung
+  fetched_at: <%= Time.at(0) %>
+  password_salt: <%= salt = Authlogic::Random.hex_token %>
+  crypted_password: <%= Authlogic::CryptoProviders::Sha512.encrypt("password" + salt) %>
+  persistence_token: <%= Authlogic::Random.hex_token %>
+  latitude: 100.0000
+  longitude: -100.0000
+
+adam:
+  name: Adam
+  character_class: slapper
+  health: 100
+  experience: 0
+  level: 2
+  fetched_at: <%= Time.at(0) %>
+  password_salt: <%= salt = Authlogic::Random.hex_token %>
+  crypted_password: <%= Authlogic::CryptoProviders::Sha512.encrypt("password" + salt) %>
+  persistence_token: <%= Authlogic::Random.hex_token %>
+  latitude: 100.0000
+  longitude: -100.0000
+
+glen:
+  name: Glen
+  character_class: slapper
+  health: 100
+  experience: 0
+  level: 3
+  fetched_at: <%= Time.at(0) %>
+  password_salt: <%= salt = Authlogic::Random.hex_token %>
+  crypted_password: <%= Authlogic::CryptoProviders::Sha512.encrypt("password" + salt) %>
+  persistence_token: <%= Authlogic::Random.hex_token %>
+  latitude: 100.0000
+  longitude: -100.0000

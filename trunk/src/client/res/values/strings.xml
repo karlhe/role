@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ROLE Client</string>
+    <string name="server_root">http://localhost:8080</string>
+    <string name="game_update_path">/androids/update</string>
+</resources>

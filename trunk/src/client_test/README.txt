@@ -1,0 +1,1 @@
+Import this as a separate Android project in Eclipse (e.g. RoleClientTest).

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"> 	    	  
+  <Button
+    android:id="@+id/listPlayers"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="List Players"
+    android:onClick="clickListPlayers"/> 	 
+  <Button
+    android:id="@+id/main_worldMapButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="World Map"
+    android:onClick="clickWorldMapButton"/> 	 
+  <Button
+    android:id="@+id/mystatus"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="My Status"
+    android:onClick="clickMyStatusButton"/> 	 
+  <Button
+    android:id="@+id/accelerometer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Accelerometer Tester"
+    android:onClick="clickAccelerometer"/> 	  
+  <Button
+    android:id="@+id/logout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Log Out"
+	android:onClick="clickLogout"/>
+</LinearLayout>
