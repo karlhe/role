@@ -1,0 +1,80 @@
+have_library: checking for fdatasync() in -lrt... -------------------- yes
+
+"gcc -o conftest -I. -I/usr/local/lib/ruby/1.8/x86_64-linux -I.     -O2 -g -Wall -Wno-parentheses -Wno-long-long conftest.c  -L. -L/usr/local/lib -Wl,-R/usr/local/lib -L.  -rdynamic -Wl,-export-dynamic     -Wl,-R -Wl,/usr/local/lib -L/usr/local/lib -lruby-static  -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main() {return 0;}
+/* end */
+
+"gcc -o conftest -I. -I/usr/local/lib/ruby/1.8/x86_64-linux -I.     -O2 -g -Wall -Wno-parentheses -Wno-long-long conftest.c  -L. -L/usr/local/lib -Wl,-R/usr/local/lib -L.  -rdynamic -Wl,-export-dynamic     -Wl,-R -Wl,/usr/local/lib -L/usr/local/lib -lruby-static -lrt  -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘fdatasync’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))fdatasync; return 0; }
+/* end */
+
+"gcc -o conftest -I. -I/usr/local/lib/ruby/1.8/x86_64-linux -I.     -O2 -g -Wall -Wno-parentheses -Wno-long-long conftest.c  -L. -L/usr/local/lib -Wl,-R/usr/local/lib -L.  -rdynamic -Wl,-export-dynamic     -Wl,-R -Wl,/usr/local/lib -L/usr/local/lib -lruby-static -lrt  -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:5: warning: implicit declaration of function ‘fdatasync’
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { fdatasync(); return 0; }
+/* end */
+
+--------------------
+
+have_header: checking for sqlite3.h... -------------------- yes
+
+"gcc -E -I. -I/usr/local/lib/ruby/1.8/x86_64-linux -I.     -O2 -g -Wall -Wno-parentheses -Wno-long-long  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <sqlite3.h>
+/* end */
+
+--------------------
+
+have_library: checking for sqlite3_open() in -lsqlite3... -------------------- yes
+
+"gcc -o conftest -I. -I/usr/local/lib/ruby/1.8/x86_64-linux -I.     -O2 -g -Wall -Wno-parentheses -Wno-long-long conftest.c  -L. -L/usr/local/lib -Wl,-R/usr/local/lib -L.  -rdynamic -Wl,-export-dynamic    -lrt  -Wl,-R -Wl,/usr/local/lib -L/usr/local/lib -lruby-static -lsqlite3 -lrt  -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘sqlite3_open’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))sqlite3_open; return 0; }
+/* end */
+
+"gcc -o conftest -I. -I/usr/local/lib/ruby/1.8/x86_64-linux -I.     -O2 -g -Wall -Wno-parentheses -Wno-long-long conftest.c  -L. -L/usr/local/lib -Wl,-R/usr/local/lib -L.  -rdynamic -Wl,-export-dynamic    -lrt  -Wl,-R -Wl,/usr/local/lib -L/usr/local/lib -lruby-static -lsqlite3 -lrt  -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:5: warning: implicit declaration of function ‘sqlite3_open’
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { sqlite3_open(); return 0; }
+/* end */
+
+--------------------
+

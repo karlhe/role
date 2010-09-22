@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"     
+    >
+    <TextView  
+	    android:id ="@+id/playerNameText"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:gravity="center_horizontal" 
+	    android:text="Name"
+    />
+    <ProgressBar
+    	android:id="@+id/playerHealthBar"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_horizontal"
+    	style="?android:attr/progressBarStyleHorizontal"
+    />
+    <TextView  
+	    android:id ="@+id/playerHealthText"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:gravity="center_horizontal" 
+	    android:text="Health"
+    />
+    <TextView  
+	    android:id ="@+id/playerActionText"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:gravity="center_horizontal" 
+	    android:text="Action" 
+    />           
+    <TextView  
+	    android:id ="@+id/opponentNameText"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:gravity="center_horizontal" 
+	    android:text="Name"
+    /> 
+    <ProgressBar
+    	android:id="@+id/opponentHealthBar"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_horizontal"
+    	style="?android:attr/progressBarStyleHorizontal"
+    />
+    <TextView  
+	    android:id ="@+id/opponentHealthText"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:gravity="center_horizontal"
+	    android:text="Health" 
+    />
+    <TextView  
+	    android:id ="@+id/opponentActionText"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:gravity="center_horizontal"
+	    android:text="Action" 
+    />
+    <Button
+    	android:id="@+id/playerActionButton1"
+    	android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    	android:text="Attack"
+    	android:onClick="onClickButton1"
+    	android:padding="16dip"
+    /> 
+    <Button
+    	android:id="@+id/playerActionButton2"
+    	android:visibility="invisible"
+    	android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    	android:text="Special"
+    	android:onClick="onClickButton2"
+    	android:padding="16dip"
+    /> 
+    
+
+	    <ImageButton
+	    	android:id="@+id/playerActionButton3"
+	    	android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	    	android:text="Attack with gesture"
+	     	android:src="@drawable/judgment48"
+			android:scaleType="center"
+	    /> 
+	   <ImageButton
+	    	android:id="@+id/playerActionButton4"
+	    	android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	    	android:text="Escape"
+	    	android:onClick="onClickButton4"
+	        android:src="@drawable/ghost48"
+			android:scaleType="center"
+	    /> 
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+karl_slap:
+  level: 1
+  character: karl
+  skill: slap
+
+saung_slap:
+  level: 1
+  character: saung
+  skill: slap

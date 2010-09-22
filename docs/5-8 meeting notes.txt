@@ -1,0 +1,16 @@
+3 second delay cuz not enough memory
+UI – button icons, background. -- sounds
+Memory profiling – answer questions about it
+Gps drain battery
+Add more gestures
+Add help/tutorial- image of button: help text – credits screen -- about
+
+
+
+Start battle at same time – gain exp points without starting battle (won the battle).
+
+Turn gps off when it isn’t visible (onPause onResume). – can change location updates on and off
+
+Accelerometer output thread number – make own thread – move the code (store and calculate) to a different thread. 
+
+

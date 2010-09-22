@@ -1,0 +1,33 @@
+Attack
+
+Hunt
+
+Assassin – stealth they no notified
+
+Option to run
+
+
+Attack
+Target gets pop up – AI mode, escape, surrender, accept fight
+Switch to battle view
+Hit point bar, actions that can be performed, actions being performed. What they doing, what you’re doing. 
+Can surrender/escape
+Gesture button to attack/cast
+
+List view of players in case ppl bunch together – or only when ppl together then pop up list to resolve
+
+
+wiki
+Team leader
+Members
+Meeting time
+
+Acceptance test
+Prioritize task – assign task. Dependencies between them. Automate tests
+
+Android monkey component. 
+
+User interface requirements --- pics!!!
+
+
+SVN

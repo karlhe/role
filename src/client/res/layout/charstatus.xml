@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/charStatus"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView  
+        android:id="@+id/charStatusInfo"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:gravity="center_horizontal" 
+	    android:padding="12dip"
+    />
+    <ImageView   
+	  android:id="@+id/charStatusImage"
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:gravity="center_horizontal"
+	  android:layout_weight="1"
+	 />
+    <TextView  
+	    android:id="@+id/charStatusDescription"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:gravity="center_horizontal" 
+	    android:padding="12dip"
+    />
+    <LinearLayout
+    	android:id="@+id/charStatusBottomButtons"
+    	android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_horizontal" 
+    	>
+		<ImageButton
+	    	android:id="@+id/charStatusSkillsButton"
+	    	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	    	android:text=" Skills "
+	    	android:src="@drawable/invoke48"
+			android:scaleType="center"
+			android:layout_weight="1"
+	    	android:onClick="clickCharStatusSkillsButton" />
+	    <ImageButton
+	    	android:id="@+id/charStatusBackButton"
+	    	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	    	android:text=" Back "
+	    	android:src="@drawable/globe_48"
+			android:scaleType="center"
+			android:layout_weight="1"
+	    	android:onClick="clickCharStatusBackButton" />
+    </LinearLayout>
+</LinearLayout>

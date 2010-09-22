@@ -1,0 +1,42 @@
+Server end maintain queue of user actions and ship entire thing to user
+Server should synchronize and serialize. Use one thread (will slow everything down but can use delays). process packets one at a time. Use a single lock (global lock) for everything if possible.
+
+Speed things up?
+
+UI – popups. Help messages
+
+Game logic.  
+
+Testing. Mock stuff??
+--screen shot for map
+Battle manually
+
+robotium
+use wait? But ok
+
+profiling get numbers heap.. garbage college
+
+DESIGN DOC
+What happened iter 3
+Polish
+Profiling – log.d
+
+Mention robotium tests
+
+
+
+Presentation
+Can mention profiling
+Branching strategy. Tags.
+
+
+
+DUE MON
+Hw5
+Peer review
+presentation
+
+
+
+
+

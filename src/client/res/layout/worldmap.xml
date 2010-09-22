@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/worldMap"
+  android:background="#000"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical">
+
+  		
+
+  <com.google.android.maps.MapView
+    android:id="@+id/worldMapMapView"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:enabled="true"
+    android:clickable="true"
+    android:apiKey="0y-uMOJ5gppunfFJHI6avqXWMhkodOigWXg0drA" />
+    
+    
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:padding="5dip"
+  android:orientation="horizontal">
+  <ImageButton
+    android:id="@+id/worldMapListPlayers"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+	android:onClick="clickWorldMapListPlayersButton"
+	android:src="@drawable/users_two_48"
+	android:scaleType="center"
+	android:text="List Players"/>
+   <ImageButton
+    android:id="@+id/worldMapMyStatus"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+	android:onClick="clickWorldMapMyStatusButton"
+	android:src="@drawable/heart_48"
+	android:scaleType="center"
+    android:text="My Status"/> 
+  <ImageButton
+    android:id="@+id/worldMapLogout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+	android:onClick="clickWorldMapLogoutButton"
+	android:src="@drawable/log_off"
+	android:scaleType="center"
+    android:text="Log Out"/>          	  		
+</LinearLayout>
+    
+    
+    
+  <!--
+    "c:\Program Files\Java\jdk1.6.0_19\bin\keytool.exe" -list -alias androiddebugkey -keystore D:\Profiles\Glen\.android\debug.keystore -storepass android -keypass android
+    http://code.google.com/android/maps-api-signup.html
+    -->
+</FrameLayout>

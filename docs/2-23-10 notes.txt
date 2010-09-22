@@ -1,0 +1,14 @@
+notes from office hours:
+
+document needs to only include stuff that will be implemented for
+iteration 1 (clearly mention what and how things are going to be
+implemented)
+
+
+acceptance test/user test need to be more specific so that other teams can
+implement them
+
+
+class diagrams need to include all Java classes and activities (for this
+iteration) -- other teams should be able to understand and implement
+everything from them

@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+karl_attack:
+  ability: karl_slap
+  target: saung
+  battle: karl_saung
+  damage: 1
+  completed: false
+
+saung_attack:
+  ability: saung_slap
+  target: karl
+  battle: karl_saung
+  damage: 1
+  completed: false

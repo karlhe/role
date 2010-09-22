@@ -1,0 +1,8 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+slap:
+  name: Slap
+  skill_type: 1
+  character_class: slapper
+  min_level: 1
+  formula: level

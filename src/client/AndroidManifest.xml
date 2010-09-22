@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="ucb.cs169.project7"
+      android:versionCode="1"
+      android:versionName="1.0">
+      <uses-permission android:name="android.permission.INTERNET" />
+      <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+      <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+      <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+      <uses-permission android:name="android.permission.VIBRATE" />
+    <application android:name=".RoleClientApplication" android:icon="@drawable/icon" android:label="@string/app_name" android:debuggable="true">
+        <uses-library android:name="com.google.android.maps" />
+        <activity android:name=".RoleClient" android:screenOrientation="sensor" android:configChanges="orientation|keyboardHidden" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />	
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CharacterSelection" android:screenOrientation="portrait" android:configChanges="orientation|keyboardHidden" android:label="Character Selection">
+        </activity>
+        <activity android:name=".BattleAlert" android:screenOrientation="portrait" android:configChanges="orientation|keyboardHidden" android:label="Battle Alert">
+        	<intent-filter>
+        		<action android:name="role.intent.action.BATTLE_ALERT.RECEIVE_INVITE" />
+        	</intent-filter>
+        </activity>
+        <activity android:name=".ListPlayers" android:label="List Players">
+        </activity>
+        <activity android:name=".Battle" android:screenOrientation="portrait" android:configChanges="orientation|keyboardHidden" android:label="Battle">
+        	<intent-filter>
+        		<action android:name="role.intent.action.BATTLE.ACCEPT_INVITE" />
+        		<action android:name="role.intent.action.BATTLE.SEND_INVITE" />
+        	</intent-filter>
+        </activity>  
+        <activity android:name=".SelectedPlayerInfo" android:screenOrientation="portrait" android:configChanges="orientation|keyboardHidden" android:label="Selected Player Information">
+        </activity>    
+        <activity android:name=".CharStatus" android:screenOrientation="portrait" android:configChanges="orientation|keyboardHidden" android:label="Character Status">
+        </activity>  
+        <activity android:name=".UseAccount" android:screenOrientation="sensor" android:configChanges="orientation|keyboardHidden" android:label="Use Account">
+        </activity>     
+        <activity android:name=".CreateAccount" android:screenOrientation="sensor" android:configChanges="orientation|keyboardHidden" android:label="Create Account">
+        </activity>    
+        <activity android:name=".Accelerometer" android:screenOrientation="portrait" android:configChanges="orientation|keyboardHidden" android:label="Accelerometer">
+        </activity>                
+        <activity android:name=".WorldMap" android:screenOrientation="portrait" android:configChanges="orientation|keyboardHidden" android:label="World Map">
+        </activity>
+        <activity android:name=".EndBattle" android:screenOrientation="portrait" android:configChanges="orientation|keyboardHidden" android:label="End Battle">
+        </activity> 
+        <service android:name=".ServerLinkService" />
+    
+<activity android:name=".LoginScreen"></activity>
+
+</application>
+    <uses-sdk android:minSdkVersion="4" />
+
+</manifest> 
